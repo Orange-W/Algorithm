@@ -78,20 +78,30 @@
         
         rootInorderIndex++;
     }
-//    NSLog(@"%p-%p",self.preorderArray[6],self.inorderArray[7]);
+
     NSInteger length = rootInorderIndex - inorderStart;
+    NSInteger preLeftStart = preorderStart+1,
+    preLeftEnd = preorderStart+length,
+    inLeftStart = inorderStart,
+    inLeftEnd = rootInorderIndex -1;
+
     //左子树
     if (length>0) {
-        
-        NSInteger preLeftStart = preorderStart+1,
-                    preLeftEnd = preorderStart+length,
-                   inLeftStart = inorderStart,
-                     inLeftEnd = rootInorderIndex -1;
-        NSLog(@"%d-%d-%d-%d",preLeftStart,preLeftEnd,inLeftStart,inLeftEnd);
+       
+        NSLog(@"%ld-%ld-%ld-%ld",preLeftStart,preLeftEnd,inLeftStart,inLeftEnd);
         root->leftTree = [self contructTreepreorderStart:preLeftStart
-                                              preorderEnd:preorderEnd
-                                             inorderStart:inorderStart inorderEnd:inLeftEnd];
+                                              preorderEnd:preLeftEnd
+                                             inorderStart:inLeftStart inorderEnd:inLeftEnd];
         
+    }
+    
+
+    //右子树
+    if (rootInorderIndex<inorderEnd && length>0) {
+        NSLog(@"%ld-%ld-%d-%ld",preLeftEnd+1,preorderEnd,rootInorderIndex+1 ,inorderEnd);
+        root->rightTree = [self contructTreepreorderStart:preLeftEnd+1
+                                             preorderEnd:preorderEnd
+                                            inorderStart:rootInorderIndex+1 inorderEnd:inorderEnd];
     }
     
     
@@ -101,9 +111,9 @@
 + (ORMBinaryTree *)construct{
     ConstructBinaryTree *constructTree =[[ConstructBinaryTree alloc] init];
     return [constructTree contructTreepreorderStart:0
-                                 preorderEnd:[constructTree preorderArray].count
+                                 preorderEnd:[constructTree preorderArray].count-1
                                 inorderStart:0
-                                  inorderEnd:[constructTree inorderArray].count];
+                                  inorderEnd:[constructTree inorderArray].count-1];
     
 }
 
