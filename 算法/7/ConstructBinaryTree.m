@@ -20,12 +20,36 @@
  *  @brief 由前序遍历中序遍历,重新构建二叉树
  */
 
+typedef struct BinaryTree{
+    int value;
+    struct BinaryTree *leftTree;
+    struct BinaryTree *rightTree;
+}ORMBinaryTree;
+
 - (NSArray *)preorderArray{
     return @[@1,@2,@4,@7,@3,@5,@6,@8];
 }
 
 - (NSArray *)inorderArray{
     return @[@4,@7,@2,@1,@5,@3,@8,@6];
+}
+
+/**
+ *  @author Orange-W, 16-01-24 03:01:49
+ *
+ *  @brief <#Description#>
+ *  @param lengthStart 左子树开始
+ *  @param lenghtEnd   左子树结束
+ *  @param rightStart  右子树开始
+ *  @param rightEnd    右子树结束
+ *  @return 节点
+ */
+- (ORMBinaryTree *)contructTreelengthStart:(NSInteger)lengthStart
+                                 lenghtEnd:(NSInteger)lenghtEnd
+                                rightStart:(NSInteger)rightStart
+                                  rightEnd:(NSInteger)rightEnd{
+    
+    return NULL;
 }
 
 + (void)construct{
