@@ -11,6 +11,7 @@
 #import "FindNumberFromArray.h"
 #import "ReplaceBlank.h"
 #import "PrintLinkDesc.h"
+#import "ConstructBinaryTree.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -24,8 +25,11 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"%@",[ReplaceBlank replaceBlankWithChar:"We are happy!"]);
         
         //5.从尾到头输出链表
-        [[[PrintLinkDesc alloc] init] printLinkDesc];
+        //[[[PrintLinkDesc alloc] init] printLinkDesc];
         
+        
+        //7.重建二叉树
+        [ConstructBinaryTree construct];
     }
     return 0;
 }

@@ -20,39 +20,90 @@
  *  @brief 由前序遍历中序遍历,重新构建二叉树
  */
 
-typedef struct BinaryTree{
-    int value;
-    struct BinaryTree *leftTree;
-    struct BinaryTree *rightTree;
-}ORMBinaryTree;
+
 
 - (NSArray *)preorderArray{
     return @[@1,@2,@4,@7,@3,@5,@6,@8];
 }
 
 - (NSArray *)inorderArray{
-    return @[@4,@7,@2,@1,@5,@3,@8,@6];
+    return @[self.preorderArray[2],
+             self.preorderArray[3],
+             self.preorderArray[1],
+             self.preorderArray[0],
+             self.preorderArray[5],
+             self.preorderArray[4],
+             self.preorderArray[7],
+             self.preorderArray[6]];
 }
 
 /**
  *  @author Orange-W, 16-01-24 03:01:49
  *
- *  @brief <#Description#>
+ *  @brief 构建二叉树
  *  @param lengthStart 左子树开始
  *  @param lenghtEnd   左子树结束
- *  @param rightStart  右子树开始
- *  @param rightEnd    右子树结束
+ *  @param inorderStart  右子树开始
+ *  @param inorderEnd    右子树结束
  *  @return 节点
  */
-- (ORMBinaryTree *)contructTreelengthStart:(NSInteger)lengthStart
-                                 lenghtEnd:(NSInteger)lenghtEnd
-                                rightStart:(NSInteger)rightStart
-                                  rightEnd:(NSInteger)rightEnd{
+- (ORMBinaryTree *)contructTreepreorderStart:(NSInteger)preorderStart
+                                 preorderEnd:(NSInteger)preorderEnd
+                                inorderStart:(NSInteger)inorderStart
+                                  inorderEnd:(NSInteger)inorderEnd{
     
-    return NULL;
+    if (preorderEnd<preorderStart
+        || inorderEnd<inorderStart
+        || preorderStart<0
+        || inorderStart<0) {
+        return NULL;
+    }
+    //根节点
+    ORMBinaryTree *root = (ORMBinaryTree *)malloc(sizeof(ORMBinaryTree));
+    root->value = (int)[self.preorderArray[preorderStart] integerValue];
+    root->leftTree = root->rightTree = NULL;
+    
+    if (preorderStart == preorderEnd) {
+        if (inorderStart == inorderEnd && self.preorderArray[preorderStart]==self.inorderArray[preorderStart]) {
+            return root;
+        }else{
+            return NULL;
+        }
+    }
+    
+    int rootInorderIndex=0;
+    while (rootInorderIndex<self.inorderArray.count
+           && self.preorderArray[preorderStart] != self.inorderArray[rootInorderIndex]
+           ) {
+        
+        rootInorderIndex++;
+    }
+//    NSLog(@"%p-%p",self.preorderArray[6],self.inorderArray[7]);
+    NSInteger length = rootInorderIndex - inorderStart;
+    //左子树
+    if (length>0) {
+        
+        NSInteger preLeftStart = preorderStart+1,
+                    preLeftEnd = preorderStart+length,
+                   inLeftStart = inorderStart,
+                     inLeftEnd = rootInorderIndex -1;
+        NSLog(@"%d-%d-%d-%d",preLeftStart,preLeftEnd,inLeftStart,inLeftEnd);
+        root->leftTree = [self contructTreepreorderStart:preLeftStart
+                                              preorderEnd:preorderEnd
+                                             inorderStart:inorderStart inorderEnd:inLeftEnd];
+        
+    }
+    
+    
+    return root;
 }
 
-+ (void)construct{
++ (ORMBinaryTree *)construct{
+    ConstructBinaryTree *constructTree =[[ConstructBinaryTree alloc] init];
+    return [constructTree contructTreepreorderStart:0
+                                 preorderEnd:[constructTree preorderArray].count
+                                inorderStart:0
+                                  inorderEnd:[constructTree inorderArray].count];
     
 }
 
