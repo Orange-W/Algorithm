@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		CE348B1D1C56C81D00C82250 /* FastSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE348B1C1C56C81D00C82250 /* FastSort.m */; };
 		CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE38A1C71C512FA50020A3F4 /* PrintLinkDesc.m */; };
+		CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE757EFF1C5808D6001AF3E3 /* TubSort.m */; };
 		CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */; };
 		CEACF0AB1C4FA5D800CF480F /* ReplaceBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACF0AA1C4FA5D800CF480F /* ReplaceBlank.m */; };
 		CEBAE0711C4E47FA00400374 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE0701C4E47FA00400374 /* main.m */; };
@@ -33,6 +34,8 @@
 		CE348B1C1C56C81D00C82250 /* FastSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSort.m; sourceTree = "<group>"; };
 		CE38A1C61C512FA50020A3F4 /* PrintLinkDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintLinkDesc.h; sourceTree = "<group>"; };
 		CE38A1C71C512FA50020A3F4 /* PrintLinkDesc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintLinkDesc.m; sourceTree = "<group>"; };
+		CE757EFE1C5808D6001AF3E3 /* TubSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubSort.h; sourceTree = "<group>"; };
+		CE757EFF1C5808D6001AF3E3 /* TubSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubSort.m; sourceTree = "<group>"; };
 		CE8D06ED1C5400B6006757F0 /* ConstructBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstructBinaryTree.h; sourceTree = "<group>"; };
 		CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstructBinaryTree.m; sourceTree = "<group>"; };
 		CEACF0A91C4FA5D800CF480F /* ReplaceBlank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceBlank.h; sourceTree = "<group>"; };
@@ -56,13 +59,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE348B1A1C56C7D700C82250 /* 8 */ = {
+		CE348B1A1C56C7D700C82250 /* 7 */ = {
 			isa = PBXGroup;
 			children = (
 				CE348B1B1C56C81D00C82250 /* FastSort.h */,
 				CE348B1C1C56C81D00C82250 /* FastSort.m */,
 			);
-			name = 8;
+			name = 7;
 			path = "算法/8";
 			sourceTree = "<group>";
 		};
@@ -76,13 +79,23 @@
 			path = "算法/5";
 			sourceTree = "<group>";
 		};
-		CE8D06EC1C54008D006757F0 /* 7 */ = {
+		CE757EFD1C58086D001AF3E3 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE757EFE1C5808D6001AF3E3 /* TubSort.h */,
+				CE757EFF1C5808D6001AF3E3 /* TubSort.m */,
+			);
+			name = 2;
+			path = "算法/2";
+			sourceTree = "<group>";
+		};
+		CE8D06EC1C54008D006757F0 /* 6 */ = {
 			isa = PBXGroup;
 			children = (
 				CE8D06ED1C5400B6006757F0 /* ConstructBinaryTree.h */,
 				CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */,
 			);
-			name = 7;
+			name = 6;
 			path = "算法/7";
 			sourceTree = "<group>";
 		};
@@ -101,11 +114,12 @@
 			children = (
 				CEBAE06F1C4E47FA00400374 /* 算法 */,
 				CEBAE0771C4E483F00400374 /* Single */,
+				CE757EFD1C58086D001AF3E3 /* 2 */,
 				CEBAE07B1C4E4E0F00400374 /* 3 */,
 				CEACF0A81C4FA57500CF480F /* 4 */,
 				CE38A1C51C512F1D0020A3F4 /* 5 */,
-				CE8D06EC1C54008D006757F0 /* 7 */,
-				CE348B1A1C56C7D700C82250 /* 8 */,
+				CE8D06EC1C54008D006757F0 /* 6 */,
+				CE348B1A1C56C7D700C82250 /* 7 */,
 				CEBAE06E1C4E47FA00400374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -209,6 +223,7 @@
 				CEBAE0711C4E47FA00400374 /* main.m in Sources */,
 				CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */,
 				CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */,
+				CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
