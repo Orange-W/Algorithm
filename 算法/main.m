@@ -12,6 +12,7 @@
 #import "ReplaceBlank.h"
 #import "PrintLinkDesc.h"
 #import "ConstructBinaryTree.h"
+#import "FastSort.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -28,8 +29,12 @@ int main(int argc, const char * argv[]) {
         //[[[PrintLinkDesc alloc] init] printLinkDesc];
         
         
-        //7.重建二叉树
-        [ConstructBinaryTree construct];
+        //6.重建二叉树
+        //[ConstructBinaryTree construct];
+        
+        //7.快速排序
+        [FastSort fastSortWithArray:[@[@2,@4,@1,@5,@3,@98,@16,@25,@44,@34,@77,@42,@13,@2,@4,@5,@13,@77] mutableCopy]];
+        
     }
     return 0;
 }

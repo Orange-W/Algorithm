@@ -71,6 +71,7 @@
         }
     }
     
+    //中序根节点
     int rootInorderIndex=0;
     while (rootInorderIndex<self.inorderArray.count
            && self.preorderArray[preorderStart] != self.inorderArray[rootInorderIndex]
