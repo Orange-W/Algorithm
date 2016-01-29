@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE2A06E21C593A8C00F684C1 /* SmallestRotateNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2A06E11C593A8C00F684C1 /* SmallestRotateNumber.m */; };
 		CE348B1D1C56C81D00C82250 /* FastSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE348B1C1C56C81D00C82250 /* FastSort.m */; };
 		CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */ = {isa = PBXBuildFile; fileRef = CE38A1C71C512FA50020A3F4 /* PrintLinkDesc.m */; };
 		CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE757EFF1C5808D6001AF3E3 /* TubSort.m */; };
 		CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */; };
 		CEACF0AB1C4FA5D800CF480F /* ReplaceBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACF0AA1C4FA5D800CF480F /* ReplaceBlank.m */; };
+		CEADD80A1C5BEE3F00B88065 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADD8091C5BEE3F00B88065 /* Fibonacci.m */; };
 		CEBAE0711C4E47FA00400374 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE0701C4E47FA00400374 /* main.m */; };
 		CEBAE07A1C4E487100400374 /* SingleMode.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE0791C4E487100400374 /* SingleMode.m */; };
 		CEBAE07E1C4E4E2C00400374 /* FindNumberFromArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE07D1C4E4E2C00400374 /* FindNumberFromArray.m */; };
@@ -30,6 +32,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CE2A06E01C593A8C00F684C1 /* SmallestRotateNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmallestRotateNumber.h; sourceTree = "<group>"; };
+		CE2A06E11C593A8C00F684C1 /* SmallestRotateNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SmallestRotateNumber.m; sourceTree = "<group>"; };
 		CE348B1B1C56C81D00C82250 /* FastSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastSort.h; sourceTree = "<group>"; };
 		CE348B1C1C56C81D00C82250 /* FastSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastSort.m; sourceTree = "<group>"; };
 		CE38A1C61C512FA50020A3F4 /* PrintLinkDesc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintLinkDesc.h; sourceTree = "<group>"; };
@@ -40,6 +44,8 @@
 		CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstructBinaryTree.m; sourceTree = "<group>"; };
 		CEACF0A91C4FA5D800CF480F /* ReplaceBlank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceBlank.h; sourceTree = "<group>"; };
 		CEACF0AA1C4FA5D800CF480F /* ReplaceBlank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplaceBlank.m; sourceTree = "<group>"; };
+		CEADD8081C5BEE3F00B88065 /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
+		CEADD8091C5BEE3F00B88065 /* Fibonacci.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fibonacci.m; sourceTree = "<group>"; };
 		CEBAE06D1C4E47FA00400374 /* 算法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "算法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEBAE0701C4E47FA00400374 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CEBAE0781C4E487100400374 /* SingleMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleMode.h; sourceTree = "<group>"; };
@@ -59,6 +65,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE2A06DF1C593A1A00F684C1 /* 8 */ = {
+			isa = PBXGroup;
+			children = (
+				CE2A06E01C593A8C00F684C1 /* SmallestRotateNumber.h */,
+				CE2A06E11C593A8C00F684C1 /* SmallestRotateNumber.m */,
+			);
+			name = 8;
+			path = "算法/8-2";
+			sourceTree = "<group>";
+		};
 		CE348B1A1C56C7D700C82250 /* 7 */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +125,16 @@
 			path = "算法/4";
 			sourceTree = "<group>";
 		};
+		CEADD8071C5BEE1800B88065 /* 9 */ = {
+			isa = PBXGroup;
+			children = (
+				CEADD8081C5BEE3F00B88065 /* Fibonacci.h */,
+				CEADD8091C5BEE3F00B88065 /* Fibonacci.m */,
+			);
+			name = 9;
+			path = "算法/9";
+			sourceTree = "<group>";
+		};
 		CEBAE0641C4E47FA00400374 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +146,8 @@
 				CE38A1C51C512F1D0020A3F4 /* 5 */,
 				CE8D06EC1C54008D006757F0 /* 6 */,
 				CE348B1A1C56C7D700C82250 /* 7 */,
+				CE2A06DF1C593A1A00F684C1 /* 8 */,
+				CEADD8071C5BEE1800B88065 /* 9 */,
 				CEBAE06E1C4E47FA00400374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -219,8 +247,10 @@
 				CEBAE07E1C4E4E2C00400374 /* FindNumberFromArray.m in Sources */,
 				CE348B1D1C56C81D00C82250 /* FastSort.m in Sources */,
 				CEACF0AB1C4FA5D800CF480F /* ReplaceBlank.m in Sources */,
+				CE2A06E21C593A8C00F684C1 /* SmallestRotateNumber.m in Sources */,
 				CEBAE07A1C4E487100400374 /* SingleMode.m in Sources */,
 				CEBAE0711C4E47FA00400374 /* main.m in Sources */,
+				CEADD80A1C5BEE3F00B88065 /* Fibonacci.m in Sources */,
 				CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */,
 				CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */,
 				CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */,
