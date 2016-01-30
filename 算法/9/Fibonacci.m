@@ -9,7 +9,11 @@
 #import "Fibonacci.h"
 
 @implementation Fibonacci
-
+/**
+ *  @author Orange-W, 16-01-30 03:01:42
+ *
+ *  @brief 斐波那契数列非递归实现
+ */
 + (NSInteger)fibonacciInNumber:(NSInteger) number{
     if (number<=0) {
         return 0;

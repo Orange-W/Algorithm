@@ -16,6 +16,8 @@
 #import "FastSort.h"
 #import "SmallestRotateNumber.h"
 #import "Fibonacci.h"
+#import "FindOneNumber.h"
+#import "IntegerPower.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -45,7 +47,12 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"%ld",[SmallestRotateNumber smallestEotateNumberFindWithArray:@[@1,@1,@2,@2,@2,@0,@1,@1,@1,@1]]);
         
         //9.斐波那契
-        NSLog(@"%ld",[Fibonacci fibonacciInNumber:8]);
+        //NSLog(@"%ld",[Fibonacci fibonacciInNumber:8]);
+        
+        //10.输出数字里的二进制数1的个数
+        //NSLog(@"%ld",(long)[FindOneNumber findOneNumberWithNumber:-8]);
+        
+        //11.整数次方
     }
     return 0;
 }

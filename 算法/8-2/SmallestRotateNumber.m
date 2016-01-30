@@ -9,7 +9,11 @@
 #import "SmallestRotateNumber.h"
 
 @implementation SmallestRotateNumber
-
+/**
+ *  @author Orange-W, 16-01-30 03:01:18
+ *
+ *  @brief 找出翻转数种最小的一个数
+ */
 + (NSInteger)smallestEotateNumberFindWithArray:(NSArray *)array{
     NSInteger start=0,end=array.count-1;
     if (array.count == 0) {
