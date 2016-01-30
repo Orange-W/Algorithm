@@ -53,6 +53,8 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"%ld",(long)[FindOneNumber findOneNumberWithNumber:-8]);
         
         //11.整数次方
+        NSLog(@"%lf",[IntegerPower integerPowerWithDouble:2 exponent:7]);
+        
     }
     return 0;
 }

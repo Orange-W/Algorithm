@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface IntegerPower : NSObject
++ (double)integerPowerWithDouble:(double)number exponent:(NSInteger)count;
 
 @end

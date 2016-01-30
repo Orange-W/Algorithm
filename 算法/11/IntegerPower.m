@@ -10,6 +10,12 @@
 
 @implementation IntegerPower
 
+/**
+ *  @author Orange-W, 16-01-31 04:01:30
+ *
+ *  @brief 求一个数的整数次方
+ */
+
 - (double)integerPowerWithDouble:(double)number exponent:(NSInteger)count{
     if (count==0) {
         return 1;
@@ -20,7 +26,7 @@
     }
     double result = [self integerPowerWithDouble:number exponent:count>>1];
     result *= result;
-    if (count %2 ==1) {
+    if ((count&1) ==1) {
         result *= number;
     }
     
@@ -28,7 +34,7 @@
     return result;
 }
 
-+ (NSInteger)integerPowerWithDouble:(double)number exponent:(NSInteger)count{
++ (double)integerPowerWithDouble:(double)number exponent:(NSInteger)count{
     return [[IntegerPower new] integerPowerWithDouble:number exponent:count];
 }
 @end
