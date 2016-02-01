@@ -19,6 +19,7 @@
 		CEBAE0711C4E47FA00400374 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE0701C4E47FA00400374 /* main.m */; };
 		CEBAE07A1C4E487100400374 /* SingleMode.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE0791C4E487100400374 /* SingleMode.m */; };
 		CEBAE07E1C4E4E2C00400374 /* FindNumberFromArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE07D1C4E4E2C00400374 /* FindNumberFromArray.m */; };
+		CEDD42D01C5FFB9B005B463C /* PrintAllNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD42CF1C5FFB9B005B463C /* PrintAllNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,8 @@
 		CEBAE0791C4E487100400374 /* SingleMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleMode.m; sourceTree = "<group>"; };
 		CEBAE07C1C4E4E2C00400374 /* FindNumberFromArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindNumberFromArray.h; sourceTree = "<group>"; };
 		CEBAE07D1C4E4E2C00400374 /* FindNumberFromArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindNumberFromArray.m; sourceTree = "<group>"; };
+		CEDD42CE1C5FFB9B005B463C /* PrintAllNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintAllNumber.h; sourceTree = "<group>"; };
+		CEDD42CF1C5FFB9B005B463C /* PrintAllNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintAllNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,9 @@
 				CEADD8071C5BEE1800B88065 /* 9 */,
 				CE870D151C5D1D9F00A49832 /* 10 */,
 				CE870D161C5D1DA500A49832 /* 11 */,
+				CEDD42CB1C5FFB88005B463C /* 12 */,
+				CEDD42CC1C5FFB88005B463C /* 13 */,
+				CEDD42CD1C5FFB88005B463C /* 14 */,
 				CEBAE06E1C4E47FA00400374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -214,6 +220,32 @@
 			);
 			name = 3;
 			path = "算法/3";
+			sourceTree = "<group>";
+		};
+		CEDD42CB1C5FFB88005B463C /* 12 */ = {
+			isa = PBXGroup;
+			children = (
+				CEDD42CE1C5FFB9B005B463C /* PrintAllNumber.h */,
+				CEDD42CF1C5FFB9B005B463C /* PrintAllNumber.m */,
+			);
+			name = 12;
+			path = "算法/12";
+			sourceTree = "<group>";
+		};
+		CEDD42CC1C5FFB88005B463C /* 13 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 13;
+			path = "算法/13";
+			sourceTree = "<group>";
+		};
+		CEDD42CD1C5FFB88005B463C /* 14 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 14;
+			path = "算法/14";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +316,7 @@
 				CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */,
 				CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */,
 				CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */,
+				CEDD42D01C5FFB9B005B463C /* PrintAllNumber.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

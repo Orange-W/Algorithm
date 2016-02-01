@@ -18,6 +18,7 @@
 #import "Fibonacci.h"
 #import "FindOneNumber.h"
 #import "IntegerPower.h"
+#import "PrintAllNumber.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -53,7 +54,10 @@ int main(int argc, const char * argv[]) {
         //NSLog(@"%ld",(long)[FindOneNumber findOneNumberWithNumber:-8]);
         
         //11.整数次方
-        NSLog(@"%lf",[IntegerPower integerPowerWithDouble:2 exponent:7]);
+        //NSLog(@"%lf",[IntegerPower integerPowerWithDouble:2 exponent:7]);
+        
+        //12.从0打印到 n 位的9.
+        //[PrintAllNumber printAllNumberWithDigit:1234];
         
     }
     return 0;
