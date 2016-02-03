@@ -19,6 +19,8 @@
 #import "FindOneNumber.h"
 #import "IntegerPower.h"
 #import "PrintAllNumber.h"
+#import "DeleteLink.h"
+#import "Reoder.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -59,6 +61,26 @@ int main(int argc, const char * argv[]) {
         //12.从0打印到 n 位的9.
         //[PrintAllNumber printAllNumberWithDigit:1234];
         
+        //13.O(1)删除链表节点
+//        Link *head = malloc(sizeof(Link));
+//        Link *deleteLink = NULL;
+//        Link *tmp = head;
+//        for (int i=0; i<10; i++) {
+//            tmp->value = i;
+//            if (i==6) {
+//                deleteLink = tmp;
+//            }
+//            tmp->next = malloc(sizeof(Link));
+//            tmp=tmp->next;
+//            tmp->next = NULL;
+//        }
+//        [DeleteLink deleteLink:deleteLink withHeadLink:head];
+//        [DeleteLink printAllLink:head];
+        
+        //14.自定义block调整关系
+        [Reoder reorderArray:[@[@1,@2,@3,@4,@5,@6] mutableCopy] withJudgeBlock:^bool(id obj) {
+            return ([obj integerValue]&1)==1;
+        }];
     }
     return 0;
 }
