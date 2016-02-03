@@ -21,6 +21,8 @@
 #import "PrintAllNumber.h"
 #import "DeleteLink.h"
 #import "Reoder.h"
+#import "FindDescLink.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -78,9 +80,13 @@ int main(int argc, const char * argv[]) {
 //        [DeleteLink printAllLink:head];
         
         //14.自定义block调整关系
-        [Reoder reorderArray:[@[@1,@2,@3,@4,@5,@6] mutableCopy] withJudgeBlock:^bool(id obj) {
-            return ([obj integerValue]&1)==1;
-        }];
+//        [Reoder reorderArray:[@[@1,@2,@3,@4,@5,@6] mutableCopy] withJudgeBlock:^bool(id obj) {
+//            return ([obj integerValue]&1)==1;
+//        }];
+        
+        //15.获得倒数第 k个节点
+        Link *result=[FindDescLink findDescLinkNumber:7 head:[CommonLinkStruct commonLinkFastInstance]];
+        NSLog(@"%d",result?result->value:-1);
     }
     return 0;
 }

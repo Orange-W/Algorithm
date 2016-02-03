@@ -13,4 +13,7 @@ typedef struct link{
     int value;
 }Link;
 
+@interface CommonLinkStruct : NSObject
++ (Link *)commonLinkFastInstance;
 
+@end

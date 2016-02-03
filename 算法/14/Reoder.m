@@ -9,7 +9,11 @@
 #import "Reoder.h"
 
 @implementation Reoder
-
+/**
+ *  @author Orange-W, 16-02-04 06:02:46
+ *
+ *  @brief 更具输入的 block 让原数组排序
+ */
 + (void)reorderArray:(NSMutableArray *)array withJudgeBlock:(Judge)block{
     if (!array.count) {
         return;

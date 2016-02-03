@@ -9,7 +9,11 @@
 #import "DeleteLink.h"
 
 @implementation DeleteLink
-
+/**
+ *  @author Orange-W, 16-02-04 06:02:18
+ *
+ *  @brief O(1)复杂度删除节点
+ */
 + (bool)deleteLink:(Link *)deleteLink withHeadLink:(Link *)headLink{
     if (!deleteLink || !headLink) {
         return NO;

@@ -15,6 +15,8 @@
 		CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE757EFF1C5808D6001AF3E3 /* TubSort.m */; };
 		CE870D191C5D212A00A49832 /* FindOneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CE870D181C5D212A00A49832 /* FindOneNumber.m */; };
 		CE870D1C1C5D52B600A49832 /* IntegerPower.m in Sources */ = {isa = PBXBuildFile; fileRef = CE870D1B1C5D52B600A49832 /* IntegerPower.m */; };
+		CE8894BB1C62B1BE002C4150 /* CommonLinkStruct.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8894BA1C62B1BE002C4150 /* CommonLinkStruct.m */; };
+		CE8894BF1C62B346002C4150 /* FindDescLink.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8894BE1C62B346002C4150 /* FindDescLink.m */; };
 		CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */; };
 		CEACF0AB1C4FA5D800CF480F /* ReplaceBlank.m in Sources */ = {isa = PBXBuildFile; fileRef = CEACF0AA1C4FA5D800CF480F /* ReplaceBlank.m */; };
 		CEADD80A1C5BEE3F00B88065 /* Fibonacci.m in Sources */ = {isa = PBXBuildFile; fileRef = CEADD8091C5BEE3F00B88065 /* Fibonacci.m */; };
@@ -54,6 +56,9 @@
 		CE870D181C5D212A00A49832 /* FindOneNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindOneNumber.m; sourceTree = "<group>"; };
 		CE870D1A1C5D52B600A49832 /* IntegerPower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegerPower.h; sourceTree = "<group>"; };
 		CE870D1B1C5D52B600A49832 /* IntegerPower.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegerPower.m; sourceTree = "<group>"; };
+		CE8894BA1C62B1BE002C4150 /* CommonLinkStruct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonLinkStruct.m; sourceTree = "<group>"; };
+		CE8894BD1C62B346002C4150 /* FindDescLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindDescLink.h; sourceTree = "<group>"; };
+		CE8894BE1C62B346002C4150 /* FindDescLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindDescLink.m; sourceTree = "<group>"; };
 		CE8D06ED1C5400B6006757F0 /* ConstructBinaryTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstructBinaryTree.h; sourceTree = "<group>"; };
 		CE8D06EE1C5400B6006757F0 /* ConstructBinaryTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstructBinaryTree.m; sourceTree = "<group>"; };
 		CEACF0A91C4FA5D800CF480F /* ReplaceBlank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplaceBlank.h; sourceTree = "<group>"; };
@@ -141,6 +146,16 @@
 			path = "算法/11";
 			sourceTree = "<group>";
 		};
+		CE8894BC1C62B333002C4150 /* 15 */ = {
+			isa = PBXGroup;
+			children = (
+				CE8894BD1C62B346002C4150 /* FindDescLink.h */,
+				CE8894BE1C62B346002C4150 /* FindDescLink.m */,
+			);
+			name = 15;
+			path = "算法/15";
+			sourceTree = "<group>";
+		};
 		CE8D06EC1C54008D006757F0 /* 6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +204,7 @@
 				CEDD42CB1C5FFB88005B463C /* 12 */,
 				CEDD42CC1C5FFB88005B463C /* 13 */,
 				CEDD42CD1C5FFB88005B463C /* 14 */,
+				CE8894BC1C62B333002C4150 /* 15 */,
 				CEBAE06E1C4E47FA00400374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -206,6 +222,7 @@
 			children = (
 				CEBAE0701C4E47FA00400374 /* main.m */,
 				CE46553B1C6163B60007C2F9 /* CommonLinkStruct.h */,
+				CE8894BA1C62B1BE002C4150 /* CommonLinkStruct.m */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -325,9 +342,11 @@
 				CEBAE07A1C4E487100400374 /* SingleMode.m in Sources */,
 				CEBAE0711C4E47FA00400374 /* main.m in Sources */,
 				CEADD80A1C5BEE3F00B88065 /* Fibonacci.m in Sources */,
+				CE8894BB1C62B1BE002C4150 /* CommonLinkStruct.m in Sources */,
 				CE870D1C1C5D52B600A49832 /* IntegerPower.m in Sources */,
 				CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */,
 				CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */,
+				CE8894BF1C62B346002C4150 /* FindDescLink.m in Sources */,
 				CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */,
 				CE46553A1C61639D0007C2F9 /* DeleteLink.m in Sources */,
 				CEDD42D01C5FFB9B005B463C /* PrintAllNumber.m in Sources */,
