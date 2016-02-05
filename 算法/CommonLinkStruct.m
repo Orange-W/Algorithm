@@ -11,19 +11,23 @@
 @implementation CommonLinkStruct
 
 + (Link *)commonLinkFastInstance{
-    Link *head = malloc(sizeof(Link));
-    Link *deleteLink = NULL;
+    Link *head = (Link *)malloc(sizeof(Link));
     Link *tmp = head;
     for (int i=0; i<10; i++) {
         tmp->value = i;
-        if (i==6) {
-            deleteLink = tmp;
-        }
         tmp->next = malloc(sizeof(Link));
         tmp=tmp->next;
         tmp->next = NULL;
     }
     return head;
+}
+
++ (void)printLink:(Link *)head{
+    Link *tmpLink = head;
+    while (tmpLink->next != NULL) {
+        NSLog(@"%d",tmpLink->value);
+        tmpLink = tmpLink->next;
+    }
 }
 
 @end

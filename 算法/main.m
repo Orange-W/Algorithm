@@ -22,10 +22,14 @@
 #import "DeleteLink.h"
 #import "Reoder.h"
 #import "FindDescLink.h"
+#import "ReverseLink.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
+        //因为很多算法要用到链表,这个作为公共的快速生成.
+        Link *commonLink = [CommonLinkStruct commonLinkFastInstance];
+        
         //1.单例模式
         //[SingleMode testSigleMode];
         
@@ -85,8 +89,14 @@ int main(int argc, const char * argv[]) {
 //        }];
         
         //15.获得倒数第 k个节点
-        Link *result=[FindDescLink findDescLinkNumber:7 head:[CommonLinkStruct commonLinkFastInstance]];
-        NSLog(@"%d",result?result->value:-1);
+        //NSLog(@"%d",result?result->value:-1);
+        //Link *result=[FindDescLink findDescLinkNumber:7 head:commonLink];
+        
+        //16.反转链表
+        [CommonLinkStruct printLink:commonLink];
+        [CommonLinkStruct printLink:[ReverseLink reverseLinkWithHead:commonLink]];
+        
+        
     }
     return 0;
 }

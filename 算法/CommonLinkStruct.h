@@ -15,5 +15,5 @@ typedef struct link{
 
 @interface CommonLinkStruct : NSObject
 + (Link *)commonLinkFastInstance;
-
++ (void)printLink:(Link *)head;
 @end
