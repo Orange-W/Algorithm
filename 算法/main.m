@@ -23,7 +23,7 @@
 #import "Reoder.h"
 #import "FindDescLink.h"
 #import "ReverseLink.h"
-
+#import "MergeLink.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -93,9 +93,13 @@ int main(int argc, const char * argv[]) {
         //Link *result=[FindDescLink findDescLinkNumber:7 head:commonLink];
         
         //16.反转链表
-        [CommonLinkStruct printLink:commonLink];
-        [CommonLinkStruct printLink:[ReverseLink reverseLinkWithHead:commonLink]];
+        //[CommonLinkStruct printLink:commonLink];
+        //[CommonLinkStruct printLink:[ReverseLink reverseLinkWithHead:commonLink]];
         
+        //17.合并链表
+        Link *commonLink2 = [CommonLinkStruct commonLinkFastInstance];
+        Link *result=[MergeLink mergeLinkWithFirst:commonLink second:commonLink2];
+        [CommonLinkStruct printLink:result];
         
     }
     return 0;
