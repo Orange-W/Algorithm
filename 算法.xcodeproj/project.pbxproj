@@ -13,6 +13,7 @@
 		CE46553A1C61639D0007C2F9 /* DeleteLink.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4655391C61639D0007C2F9 /* DeleteLink.m */; };
 		CE4655401C616BB30007C2F9 /* Reoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE46553F1C616BB30007C2F9 /* Reoder.m */; };
 		CE58CFD71C66BAC800587F8B /* MergeLink.m in Sources */ = {isa = PBXBuildFile; fileRef = CE58CFD61C66BAC800587F8B /* MergeLink.m */; };
+		CE5DA0271C692D3900891019 /* HasSubtree.m in Sources */ = {isa = PBXBuildFile; fileRef = CE5DA0261C692D3900891019 /* HasSubtree.m */; };
 		CE757F001C5808D6001AF3E3 /* TubSort.m in Sources */ = {isa = PBXBuildFile; fileRef = CE757EFF1C5808D6001AF3E3 /* TubSort.m */; };
 		CE870D191C5D212A00A49832 /* FindOneNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CE870D181C5D212A00A49832 /* FindOneNumber.m */; };
 		CE870D1C1C5D52B600A49832 /* IntegerPower.m in Sources */ = {isa = PBXBuildFile; fileRef = CE870D1B1C5D52B600A49832 /* IntegerPower.m */; };
@@ -54,6 +55,8 @@
 		CE46553F1C616BB30007C2F9 /* Reoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reoder.m; sourceTree = "<group>"; };
 		CE58CFD51C66BAC800587F8B /* MergeLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeLink.h; sourceTree = "<group>"; };
 		CE58CFD61C66BAC800587F8B /* MergeLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MergeLink.m; sourceTree = "<group>"; };
+		CE5DA0251C692D3900891019 /* HasSubtree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HasSubtree.h; sourceTree = "<group>"; };
+		CE5DA0261C692D3900891019 /* HasSubtree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HasSubtree.m; sourceTree = "<group>"; };
 		CE757EFE1C5808D6001AF3E3 /* TubSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TubSort.h; sourceTree = "<group>"; };
 		CE757EFF1C5808D6001AF3E3 /* TubSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TubSort.m; sourceTree = "<group>"; };
 		CE870D171C5D212A00A49832 /* FindOneNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindOneNumber.h; sourceTree = "<group>"; };
@@ -120,6 +123,16 @@
 			);
 			name = 5;
 			path = "算法/5";
+			sourceTree = "<group>";
+		};
+		CE5DA0241C692D1700891019 /* 18 */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DA0251C692D3900891019 /* HasSubtree.h */,
+				CE5DA0261C692D3900891019 /* HasSubtree.m */,
+			);
+			name = 18;
+			path = "算法/18";
 			sourceTree = "<group>";
 		};
 		CE757EFD1C58086D001AF3E3 /* 2 */ = {
@@ -233,6 +246,7 @@
 				CE8894BC1C62B333002C4150 /* 15 */,
 				CEAEF32D1C65540300D3DE07 /* 16 */,
 				CEAEF32E1C65540D00D3DE07 /* 17 */,
+				CE5DA0241C692D1700891019 /* 18 */,
 				CEBAE06E1C4E47FA00400374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -374,6 +388,7 @@
 				CE58CFD71C66BAC800587F8B /* MergeLink.m in Sources */,
 				CE8894BB1C62B1BE002C4150 /* CommonLinkStruct.m in Sources */,
 				CE870D1C1C5D52B600A49832 /* IntegerPower.m in Sources */,
+				CE5DA0271C692D3900891019 /* HasSubtree.m in Sources */,
 				CE8D06EF1C5400B6006757F0 /* ConstructBinaryTree.m in Sources */,
 				CE38A1C81C512FA50020A3F4 /* PrintLinkDesc.m in Sources */,
 				CE8894BF1C62B346002C4150 /* FindDescLink.m in Sources */,
