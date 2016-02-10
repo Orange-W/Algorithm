@@ -27,6 +27,9 @@
 		CEBAE07A1C4E487100400374 /* SingleMode.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE0791C4E487100400374 /* SingleMode.m */; };
 		CEBAE07E1C4E4E2C00400374 /* FindNumberFromArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CEBAE07D1C4E4E2C00400374 /* FindNumberFromArray.m */; };
 		CEDD42D01C5FFB9B005B463C /* PrintAllNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDD42CF1C5FFB9B005B463C /* PrintAllNumber.m */; };
+		CEECC95F1C6A9F9A00043C2D /* ExchangeTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC95E1C6A9F9A00043C2D /* ExchangeTree.m */; };
+		CEECC9621C6A9FB900043C2D /* CommonTree.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC9611C6A9FB900043C2D /* CommonTree.m */; };
+		CEECC9651C6AAEFA00043C2D /* RunMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = CEECC9641C6AAEFA00043C2D /* RunMatrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +85,12 @@
 		CEBAE07D1C4E4E2C00400374 /* FindNumberFromArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindNumberFromArray.m; sourceTree = "<group>"; };
 		CEDD42CE1C5FFB9B005B463C /* PrintAllNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrintAllNumber.h; sourceTree = "<group>"; };
 		CEDD42CF1C5FFB9B005B463C /* PrintAllNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrintAllNumber.m; sourceTree = "<group>"; };
+		CEECC95D1C6A9F9A00043C2D /* ExchangeTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeTree.h; sourceTree = "<group>"; };
+		CEECC95E1C6A9F9A00043C2D /* ExchangeTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeTree.m; sourceTree = "<group>"; };
+		CEECC9601C6A9FB900043C2D /* CommonTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTree.h; sourceTree = "<group>"; };
+		CEECC9611C6A9FB900043C2D /* CommonTree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTree.m; sourceTree = "<group>"; };
+		CEECC9631C6AAEFA00043C2D /* RunMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunMatrix.h; sourceTree = "<group>"; };
+		CEECC9641C6AAEFA00043C2D /* RunMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunMatrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,6 +256,10 @@
 				CEAEF32D1C65540300D3DE07 /* 16 */,
 				CEAEF32E1C65540D00D3DE07 /* 17 */,
 				CE5DA0241C692D1700891019 /* 18 */,
+				CEECC9591C6A9F7400043C2D /* 19 */,
+				CEECC95A1C6A9F7400043C2D /* 20 */,
+				CEECC95B1C6A9F7400043C2D /* 21 */,
+				CEECC95C1C6A9F7400043C2D /* 22 */,
 				CEBAE06E1C4E47FA00400374 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -265,6 +278,8 @@
 				CEBAE0701C4E47FA00400374 /* main.m */,
 				CE46553B1C6163B60007C2F9 /* CommonLinkStruct.h */,
 				CE8894BA1C62B1BE002C4150 /* CommonLinkStruct.m */,
+				CEECC9601C6A9FB900043C2D /* CommonTree.h */,
+				CEECC9611C6A9FB900043C2D /* CommonTree.m */,
 			);
 			path = "算法";
 			sourceTree = "<group>";
@@ -317,6 +332,42 @@
 			);
 			name = 14;
 			path = "算法/14";
+			sourceTree = "<group>";
+		};
+		CEECC9591C6A9F7400043C2D /* 19 */ = {
+			isa = PBXGroup;
+			children = (
+				CEECC95D1C6A9F9A00043C2D /* ExchangeTree.h */,
+				CEECC95E1C6A9F9A00043C2D /* ExchangeTree.m */,
+			);
+			name = 19;
+			path = "算法/19";
+			sourceTree = "<group>";
+		};
+		CEECC95A1C6A9F7400043C2D /* 20 */ = {
+			isa = PBXGroup;
+			children = (
+				CEECC9631C6AAEFA00043C2D /* RunMatrix.h */,
+				CEECC9641C6AAEFA00043C2D /* RunMatrix.m */,
+			);
+			name = 20;
+			path = "算法/20";
+			sourceTree = "<group>";
+		};
+		CEECC95B1C6A9F7400043C2D /* 21 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 21;
+			path = "算法/21";
+			sourceTree = "<group>";
+		};
+		CEECC95C1C6A9F7400043C2D /* 22 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = 22;
+			path = "算法/22";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -375,8 +426,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEECC9621C6A9FB900043C2D /* CommonTree.m in Sources */,
 				CEBAE07E1C4E4E2C00400374 /* FindNumberFromArray.m in Sources */,
 				CE870D191C5D212A00A49832 /* FindOneNumber.m in Sources */,
+				CEECC9651C6AAEFA00043C2D /* RunMatrix.m in Sources */,
+				CEECC95F1C6A9F9A00043C2D /* ExchangeTree.m in Sources */,
 				CEAEF3311C65564D00D3DE07 /* ReverseLink.m in Sources */,
 				CE348B1D1C56C81D00C82250 /* FastSort.m in Sources */,
 				CEACF0AB1C4FA5D800CF480F /* ReplaceBlank.m in Sources */,

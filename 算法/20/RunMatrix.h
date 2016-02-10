@@ -1,14 +1,16 @@
 //
-//  HasSubtree.h
+//  RunMatrix.h
 //  算法
 //
-//  Created by user on 16/2/9.
+//  Created by user on 16/2/10.
 //  Copyright © 2016年 mredrock. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "CommonTree.h"
 
-@interface HasSubtree : NSObject
+@interface RunMatrix : NSObject
+- (void) runMatrix;
++ (void)run;
+
 
 @end

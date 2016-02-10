@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CommonTree.h"
 #import "SingleMode.h"
 #import "TubSort.h"
 #import "FindNumberFromArray.h"
@@ -24,6 +25,9 @@
 #import "FindDescLink.h"
 #import "ReverseLink.h"
 #import "MergeLink.h"
+#import "HasSubtree.h"
+#import "ExchangeTree.h"
+#import "RunMatrix.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -97,10 +101,18 @@ int main(int argc, const char * argv[]) {
         //[CommonLinkStruct printLink:[ReverseLink reverseLinkWithHead:commonLink]];
         
         //17.合并链表
-        Link *commonLink2 = [CommonLinkStruct commonLinkFastInstance];
-        Link *result=[MergeLink mergeLinkWithFirst:commonLink second:commonLink2];
-        [CommonLinkStruct printLink:result];
+        //Link *commonLink2 = [CommonLinkStruct commonLinkFastInstance];
+        //Link *result=[MergeLink mergeLinkWithFirst:commonLink second:commonLink2];
+        //[CommonLinkStruct printLink:result];
         
+        //18.二叉树是否包含子树
+        //[HasSubtree ]
+        
+        //19.翻转二叉树
+        //[ExchangeTree exchangeTree:(Tree *)];
+        
+        //20.旋转遍历矩阵
+        [RunMatrix run];
     }
     return 0;
 }
